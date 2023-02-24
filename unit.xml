@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.0010" tests="6" failures="6">
+  <testsuite name="Root Suite" timestamp="2023-02-24T17:50:09" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="http_basics" timestamp="2023-02-24T17:50:09" tests="6" file="/Users/mauvies/personal/gorgias-backend-mauvies/test/index.spec.js" time="2.0010" failures="6">
+    <testcase name="http_basics Should return 404 for an invalid route" time="0.0010" classname="Should return 404 for an invalid route">
+      <failure message="Cannot read properties of undefined (reading &apos;address&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'address')
+    at serverAddress (node_modules/chai-http/lib/request.js:282:18)
+    at new Test (node_modules/chai-http/lib/request.js:271:53)
+    at Object.obj.<computed> [as get] (node_modules/chai-http/lib/request.js:239:14)
+    at Context.<anonymous> (test/index.spec.js:14:14)
+    at processImmediate (node:internal/timers:466:21)]]></failure>
+    </testcase>
+    <testcase name="http_basics Should return a 400 if the request param is not valid - 1" time="0.0000" classname="Should return a 400 if the request param is not valid - 1">
+      <failure message="Cannot read properties of undefined (reading &apos;address&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'address')
+    at serverAddress (node_modules/chai-http/lib/request.js:282:18)
+    at new Test (node_modules/chai-http/lib/request.js:271:53)
+    at Object.obj.<computed> [as get] (node_modules/chai-http/lib/request.js:239:14)
+    at Context.<anonymous> (test/index.spec.js:23:14)
+    at processImmediate (node:internal/timers:466:21)]]></failure>
+    </testcase>
+    <testcase name="http_basics Should return a 400 if the request param is not valid - 2" time="0.0000" classname="Should return a 400 if the request param is not valid - 2">
+      <failure message="Cannot read properties of undefined (reading &apos;address&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'address')
+    at serverAddress (node_modules/chai-http/lib/request.js:282:18)
+    at new Test (node_modules/chai-http/lib/request.js:271:53)
+    at Object.obj.<computed> [as get] (node_modules/chai-http/lib/request.js:239:14)
+    at Context.<anonymous> (test/index.spec.js:35:14)
+    at processImmediate (node:internal/timers:466:21)]]></failure>
+    </testcase>
+    <testcase name="http_basics Should return a 404 if the requested id is not present in data - 1" time="0.0000" classname="Should return a 404 if the requested id is not present in data - 1">
+      <failure message="Cannot read properties of undefined (reading &apos;address&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'address')
+    at serverAddress (node_modules/chai-http/lib/request.js:282:18)
+    at new Test (node_modules/chai-http/lib/request.js:271:53)
+    at Object.obj.<computed> [as get] (node_modules/chai-http/lib/request.js:239:14)
+    at Context.<anonymous> (test/index.spec.js:46:14)
+    at processImmediate (node:internal/timers:466:21)]]></failure>
+    </testcase>
+    <testcase name="http_basics Should return a 404 if the requested id is not present in data - 2" time="0.0000" classname="Should return a 404 if the requested id is not present in data - 2">
+      <failure message="Cannot read properties of undefined (reading &apos;address&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'address')
+    at serverAddress (node_modules/chai-http/lib/request.js:282:18)
+    at new Test (node_modules/chai-http/lib/request.js:271:53)
+    at Object.obj.<computed> [as get] (node_modules/chai-http/lib/request.js:239:14)
+    at Context.<anonymous> (test/index.spec.js:55:14)
+    at processImmediate (node:internal/timers:466:21)]]></failure>
+    </testcase>
+    <testcase name="http_basics Should return the correct data with status 200" time="2.0000" classname="Should return the correct data with status 200">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/Users/mauvies/personal/gorgias-backend-mauvies/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/mauvies/personal/gorgias-backend-mauvies/test/index.spec.js)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
