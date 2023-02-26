@@ -1,15 +1,19 @@
 const http = require('http');
 
-const { handleGetReq } = require('./routes');
+const config = require('./config');
+const projectsController = require('./projects/controller');
+const Router = require('./router');
 
-const host = 'localhost';
-const port = 8000;
+const { host, port } = config;
 
-const requestListener = function (req, res) {
-  if (req.method === 'GET') {
-    return handleGetReq(req, res);
-  }
-  // rest of request methods...
+// routes
+const router = new Router();
+router.get('/projects/:id', projectsController.getProject);
+
+// listener
+const requestListener = (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  router.routeRequest(req, res);
 };
 
 const server = http.createServer(requestListener);
